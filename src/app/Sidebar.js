@@ -2,12 +2,12 @@
 
 import React from 'react';
 import Link from 'next/link';
-// import '../components/Sidebar.css';
+import './Sidebar.css';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar w-auto scroll-auto">
-      <ul className="sidebar-list">
+    <div className="sidebar w-25 scroll-auto">
+      <ul className="sidebar-list ps-4">
         <li className="sidebar-item active">
           <Link href="/" className="sidebar-link mb-1">Foundations</Link>
         </li>
