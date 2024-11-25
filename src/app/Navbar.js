@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './Assets/logo.png'
+import Logo from '../app/Assets/logo.png';
 import Image from 'next/image';
 import './Navbar.css';
 
