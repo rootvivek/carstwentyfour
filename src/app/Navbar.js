@@ -1,64 +1,34 @@
-// src/components/Navbar.js
-import Link from 'next/link';
+import React from 'react'
+import Logo from '../app/Assets/logo.png';
 import Image from 'next/image';
+import './Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div className="container-fluid">
-        {/* Logo Section */}
-        <Link href="/" passHref>
-          <a className="navbar-brand">
-            <Image src="/assets/logo.png" alt="Logo" width={150} height={50} />
-          </a>
-        </Link>
-        
-        {/* Hamburger Toggle Button (for mobile) */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a className="navbar-brand d-flex justify-between align-items-center" href="#">
+                <Image src={Logo} alt="Logo" width="80" height="40" className="me-3"/>
+                LEGO Design System
+            </a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" href="#">Docs</a>
+                </li>
+            </ul>
+            <form className="d-flex" role="search">
+                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button className="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </nav>
+  )
+}
 
-        {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link href="/" passHref>
-                <Link className="nav-link active" aria-current="page">Home</Link>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/about" passHref>
-                <Link className="nav-link">About</Link>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/services" passHref>
-                <Link className="nav-link">Services</Link>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/contact" passHref>
-                <Link className="nav-link">Contact</Link>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/login" passHref>
-                <Link className="nav-link btn btn-outline-light">Login</Link>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;
+export default Navbar
