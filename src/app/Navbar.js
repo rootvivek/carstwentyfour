@@ -31,27 +31,27 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link href="/" passHref>
-                <a className="nav-link active" aria-current="page">Home</a>
+                <Link className="nav-link active" aria-current="page">Home</Link>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/about" passHref>
-                <a className="nav-link">About</a>
+                <Link className="nav-link">About</Link>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/services" passHref>
-                <a className="nav-link">Services</a>
+                <Link className="nav-link">Services</Link>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact" passHref>
-                <a className="nav-link">Contact</a>
+                <Link className="nav-link">Contact</Link>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/login" passHref>
-                <a className="nav-link btn btn-outline-light">Login</a>
+                <Link className="nav-link btn btn-outline-light">Login</Link>
               </Link>
             </li>
           </ul>
