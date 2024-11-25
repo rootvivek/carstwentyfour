@@ -7,7 +7,7 @@ function Navbar() {
   return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a className="navbar-brand d-flex justify-between align-items-center" href="#">
-                <Image src={Logo} alt="Logo" width="80" height="40" className="me-3"/>
+                <Image src={Logo} alt="Logo" width="auto" height="auto" className="me-3"/>
                 LEGO Design System
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
