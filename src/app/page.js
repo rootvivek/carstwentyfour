@@ -9,14 +9,10 @@ import Index from './index';
 
 function page() {
   return (
-    <></>
-  //  <Router>
-  //     <Navbar/>
-  //         <Sidebar/>
-  //         <Routes>
-  //           <Route path="/" element={<Index/>} />
-  //         </Routes>
-  //   </Router>
+    <>
+        <Navbar/>
+        <Sidebar/>
+    </>
   )
 }
 
