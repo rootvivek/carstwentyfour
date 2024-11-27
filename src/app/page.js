@@ -9,6 +9,7 @@ import Index from './index';
 
 function page() {
   return (
+    <></>
   //  <Router>
   //     <Navbar/>
   //         <Sidebar/>
