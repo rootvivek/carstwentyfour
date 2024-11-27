@@ -2,20 +2,20 @@
 
 import React from 'react'
 import Navbar from './Navbar'
-// import { Router } from 'next/router'
 import Sidebar from './Sidebar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Index from './index';
 
 
 function page() {
   return (
-    <>
+   <Router>
       <Navbar/>
           <Sidebar/>
-
-    </>
-      // <Router>
-        
-      // </Router>
+          <Routes>
+            <Route path="/" element={<Index/>} />
+          </Routes>
+    </Router>
   )
 }
 
