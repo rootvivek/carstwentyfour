@@ -7,7 +7,7 @@ import styles from './css/Layout.module.css'
 
 function page({children}) {
   return (
-    <>
+    <div>
       <Navbar />
         <div className={styles.layout}>
           <Sidebar />
@@ -15,7 +15,7 @@ function page({children}) {
             {children}
           </main>
         </div>
-    </>
+    </div>
     
   )
 }
