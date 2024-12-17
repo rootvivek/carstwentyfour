@@ -3,16 +3,20 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Index from './index';
+import styles from './css/Layout.module.css'
 
-
-function page() {
+function page({children}) {
   return (
     <>
-        <Navbar/>
-        <Sidebar/>
+      <Navbar />
+        <div className={styles.layout}>
+          <Sidebar />
+          <main className={styles.content}>
+            {children}
+          </main>
+        </div>
     </>
+    
   )
 }
 

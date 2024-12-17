@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react';
 import Link from 'next/link';
 import './Sidebar.css';
@@ -9,17 +7,17 @@ const Sidebar = () => {
     <div className="sidebar w-25 scroll-auto">
       <ul className="sidebar-list ps-4">
         <li className="sidebar-item active">
-          <Link href="/" className="sidebar-link mb-1">Foundations</Link>
+          <Link href="/about" className ="sidebar-link mb-1 active">Foundations</Link>
         </li>
         <li className="sidebar-item">
           <Link href="#" className="sidebar-link disabled fw-bold">Basics</Link>
           <ul className="submenu">
-            <li><Link href="/settings/Colors" className="submenu-link">Color</Link></li>
-            <li><Link href="/settings/privacy" className="submenu-link">Typography</Link></li>
-            <li><Link href="/settings/security" className="submenu-link">Shadows</Link></li>
-            <li><Link href="/settings/security" className="submenu-link">Grid</Link></li>
-            <li><Link href="/settings/security" className="submenu-link">Icons</Link></li>
-            <li><Link href="/settings/security" className="submenu-link">Breakpoints</Link></li>
+            <li><Link href="/settings/Colors" className ="submenu-link">Color</Link></li>
+            <li><Link href="/settings/privacy" className ="submenu-link">Typography</Link></li>
+            <li><Link href="/settings/security" className ="submenu-link">Shadows</Link></li>
+            <li><Link href="/settings/security" className ="submenu-link">Grid</Link></li>
+            <li><Link href="/settings/security" className ="submenu-link">Icons</Link></li>
+            <li><Link href="/settings/security" className ="submenu-link">Breakpoints</Link></li>
           </ul>
         </li>
         <li className="sidebar-item">
