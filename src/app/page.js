@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 import styles from './css/Layout.module.css'
 
-function page({children}) {
+export default function page({children}) {
   return (
     <div>
       <Navbar />
@@ -20,4 +20,3 @@ function page({children}) {
   )
 }
 
-export default page
