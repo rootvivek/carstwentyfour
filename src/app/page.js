@@ -3,7 +3,7 @@ import Navbar from './Navbar'; // Assuming the Navbar component exists
 import Sidebar from './Sidebar'; // Assuming the Sidebar component exists
 import styles from './Layout.module.css'; // Assuming this CSS exists
 
-const Page = () => {
+const Page = (children) => {
   return (
     <>
       <Navbar />
