@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import Navbar from './Navbar'; // Assuming the Navbar component exists
 import Sidebar from './Sidebar'; // Assuming the Sidebar component exists
