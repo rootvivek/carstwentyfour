@@ -10,6 +10,7 @@ const Page = (children) => {
       <div className={styles.layout}>
         <Sidebar />
         <main className={styles.content}>
+          {children}
         </main>
       </div>
     </>
