@@ -10,7 +10,6 @@ const Page = () => {
       <div className={styles.layout}>
         <Sidebar />
         <main className={styles.content}>
-          {children} {/* Render the children passed from the layout */}
         </main>
       </div>
     </>
