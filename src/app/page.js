@@ -1,19 +1,20 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
-import styles from './css/Layout.module.css'
+import React from 'react';
+import Navbar from './Navbar'; // Assuming the Navbar component exists
+import Sidebar from './Sidebar'; // Assuming the Sidebar component exists
+import styles from './Layout.module.css'; // Assuming this CSS exists
 
-export default function Page({children}) {
+const Page = ({ children }) => {
   return (
     <>
       <Navbar />
-        <div className={styles.layout}>
-          <Sidebar />
-          <main className={styles.content}>
-            {children}
-          </main>
-        </div>
+      <div className={styles.layout}>
+        <Sidebar />
+        <main className={styles.content}>
+          {children} {/* Render the children passed from the layout */}
+        </main>
+      </div>
     </>
-  )
-}
+  );
+};
 
+export default Page;

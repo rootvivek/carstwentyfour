@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className="sidebar w-25 scroll-auto">
       <ul className="sidebar-list ps-4">
         <li className="sidebar-item active">
-          <Link href="/about" className ="sidebar-link mb-1 active">Foundations</Link>
+          <Link href="./about" className ="sidebar-link mb-1 active">Foundations</Link>
         </li>
         <li className="sidebar-item">
           <Link href="#" className="sidebar-link disabled fw-bold">Basics</Link>
