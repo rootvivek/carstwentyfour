@@ -8,7 +8,7 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a className="navbar-brand d-flex justify-between align-items-center" href="#">
                 <Image src={Logo} alt="Logo" width="80" height="40" className="ms-4 me-3"/>
-                LEBO Design System
+                LEBO Design Systems
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
