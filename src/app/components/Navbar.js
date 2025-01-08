@@ -1,13 +1,13 @@
 import React from 'react'
-import Logo from '../app/Assets/logo.png';
+import Logo from '../Assets/logo.png';
 import Image from 'next/image';
-import './Navbar.css';
+import '../components/Navbar.module.css';
 
 function Navbar() {
   return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
             <a className="navbar-brand d-flex justify-between align-items-center" href="#">
-                <Image src={Logo} alt="Logo" width="80" height="40" className="ms-4 me-3"/>
+                <Image src={Logo} alt="Logo" width="80" height="40" className=" me-3"/>
                 LEBO Design Systems
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
