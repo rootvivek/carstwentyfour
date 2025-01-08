@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+        /* Hide scrollbars */
 }
 
 a {
@@ -11,7 +13,24 @@ a {
     color: inherit;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.heading{
+    font-weight: 700;
+}
+
+.head-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.para{
+    font-size: 20px;
+    font-weight: 500;
+    color: #383c41;
+}
+
+.para-2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #383c41;
 }

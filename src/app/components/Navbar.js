@@ -1,11 +1,11 @@
 import React from 'react'
 import Logo from '../Assets/logo.png';
 import Image from 'next/image';
-import '../components/Navbar.module.css';
+import './Navbar.css';
 
 function Navbar() {
   return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <nav className="navbar navbar-expand-lg navbar-light px-3">
             <a className="navbar-brand d-flex justify-between align-items-center" href="#">
                 <Image src={Logo} alt="Logo" width="80" height="40" className=" me-3"/>
                 LEBO Design Systems

@@ -1,45 +1,54 @@
-// components/Sidebar.js
+"use client"
 
-import Link from 'next/link';
-import styles from '../components/Sidebar.module.css';
+import styles from './Sidebar.module.css';
+import { useRouter } from 'next/navigation'
+
 
 const Sidebar = () => {
+
+  const router = useRouter();
+  const basic = [
+    { name: 'Button', href: '/' },
+    { name: 'Checkbox', href: '/pages/accordion' },
+    { name: 'Radio', href: '/pages/badge' },
+    { name: 'Paginationx', href: '/pages/pagination' },
+    { name: 'Switch', href: '/blog' },
+    { name: 'Badge', href: '/contact' },
+    { name: 'Input Field', href: '/testimonials' },
+    { name: 'Accordion', href: '/pricing' },
+    { name: 'Slider', href: '/faq' },
+    { name: 'Progress Bar', href: '/careers' },
+  ];
+
+    const comp = [
+    { name: 'set', href: '/' },
+    { name: 'Checkbox', href: '/pages/accordion' },
+    { name: 'Radio', href: '/services' },
+    { name: 'Paginationx', href: '/portfolio' },
+    { name: 'Switch', href: '/blog' },
+    { name: 'Badge', href: '/contact' },
+    { name: 'Input Field', href: '/testimonials' },
+    { name: 'Accordion', href: '/pricing' },
+    { name: 'Slider', href: '/faq' },
+    { name: 'Progress Bar', href: '/careers' },
+  ];
+
   return (
-    <div className={styles.sidebar}>
-      <h2>Navigation</h2>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/pages/accordion">Accordion</Link>
-        </li>
-        <li>
-          <Link href="/pages/badge">Badge</Link>
-        </li>
-         <li>
-          <Link href="/pages/switch">Switch</Link>
-        </li>
-         <li>
-          <Link href="/pages/button">Button</Link>
-        </li>
-         <li>
-          <Link href="/pages/checkbox">Checkbox</Link>
-        </li>
-         <li>
-          <Link href="/pages/radio">Radio Button</Link>
-        </li>
-         <li>
-          <Link href="/pages/chip">Chip</Link>
-        </li>
-         <li>
-          <Link href="/pages/pagination">Pagination</Link>
-        </li>
-         <li>
-          <Link href="/pages/slider">Slider</Link>
-        </li>
-      </ul>
-    </div>
+      <div className={styles.sidebar}>
+        <a className="nav-link" href="/">Welcome</a>
+        <ul className={styles.navList}>
+          <p className='mt-4'>Basic</p>
+          {basic.map((link) => (
+            <li className="list-group-item active" key={link.name}>
+              <a
+                href={link.href}
+                className={router.pathname === link.href ? styles.active : ''}>
+                {link.name}
+              </a>            
+            </li>
+          ))}
+        </ul>
+      </div>
   );
 };
 
