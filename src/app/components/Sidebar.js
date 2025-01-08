@@ -12,10 +12,31 @@ const Sidebar = () => {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/About">About</Link>
+          <Link href="/pages/accordion">Accordion</Link>
         </li>
         <li>
-          <Link href="/services">Services</Link>
+          <Link href="/pages/badge">Badge</Link>
+        </li>
+         <li>
+          <Link href="/pages/switch">Switch</Link>
+        </li>
+         <li>
+          <Link href="/pages/button">Button</Link>
+        </li>
+         <li>
+          <Link href="/pages/checkbox">Checkbox</Link>
+        </li>
+         <li>
+          <Link href="/pages/radio">Radio Button</Link>
+        </li>
+         <li>
+          <Link href="/pages/chip">Chip</Link>
+        </li>
+         <li>
+          <Link href="/pages/pagination">Pagination</Link>
+        </li>
+         <li>
+          <Link href="/pages/slider">Slider</Link>
         </li>
       </ul>
     </div>
