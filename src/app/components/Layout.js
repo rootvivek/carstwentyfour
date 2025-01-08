@@ -1,6 +1,6 @@
 // components/Layout.js
 
-import Sidebar from './Sidebar';
+import Sidebar from "./Sidebar";
 import styles from '../components/Layout.module.css';
 import Navbar from './Navbar';
 

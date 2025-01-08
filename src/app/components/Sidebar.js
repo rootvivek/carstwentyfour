@@ -2,7 +2,7 @@
 
 import styles from './Sidebar.module.css';
 import { useRouter } from 'next/navigation'
-
+import Link from 'next/link';
 
 const Sidebar = () => {
 
@@ -35,16 +35,16 @@ const Sidebar = () => {
 
   return (
       <div className={styles.sidebar}>
-        <a className="nav-link" href="/">Welcome</a>
+        <Link className="nav-link" href="/">Welcome</Link>
         <ul className={styles.navList}>
           <p className='mt-4'>Basic</p>
           {basic.map((link) => (
             <li className="list-group-item active" key={link.name}>
-              <a
+              <Link
                 href={link.href}
                 className={router.pathname === link.href ? styles.active : ''}>
                 {link.name}
-              </a>            
+              </Link>            
             </li>
           ))}
         </ul>
